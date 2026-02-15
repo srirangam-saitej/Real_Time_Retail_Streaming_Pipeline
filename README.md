@@ -1,7 +1,22 @@
-# Real_Time_Retail_Streaming_Pipeline
+# **Real-Time Retail Data Streaming Pipeline (Kafka + MongoDB Atlas)**
 ***
 ## Project Overview
-This project is an overview of an real-time retail streaming pipeline using Apache Kafka with separate Orders and Payments topics. Implemented stream-stream joins using Kafka Streams to generate enriched order events. Configured Kafka Connect MongoDB Sink to persist processed data into MongoDB Atlas, enabling real-time business dashboards and revenue analytics.
+
+Designed and implemented a real-time retail data processing pipeline using **Apache Kafka** to ingest and process customer transaction data. Separate **Orders** and **Payments** topics were created to capture transactional events independently.
+
+Used **Kafka Streams** to perform stream–stream joins between order and payment events, generating combined order records that combine transactional and payment insights in real time.
+
+Configured **Kafka Connect MongoDB Sink Connector** to automatically persist processed streaming data into **MongoDB Atlas**, ensuring low-latency data availability for analytics workloads.
+
+Built **MongoDB Atlas Charts** dashboards on top of the streamed data to enable real-time business monitoring, revenue tracking, and operational analytics.
+
+**Key Highlights:**
+
+* Real-time event-driven architecture for retail transactions
+* Kafka topic design for scalable ingestion (Orders & Payments)
+* Stream–stream joins using Kafka Streams for event enrichment
+* Automated sink integration with MongoDB Atlas via Kafka Connect
+* Real-time visualization and analytics using Atlas Charts
 ***
 
 ## Architectural Diagram
